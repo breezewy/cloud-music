@@ -1,0 +1,96 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "appid": "wx13c4ba61e6605db3",
+  "projectname": "music-cloud",
+  "libVersion": "2.14.1",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "demo",
+          "pathName": "pages/demo/demo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "musiclist",
+          "pathName": "pages/musiclist/musiclist",
+          "query": "playlistId= 646993095",
+          "scene": null
+        },
+        {
+          "name": "blog-edit",
+          "pathName": "pages/blog-edit/blog-edit",
+          "query": "nickName= \"Like\"& avatarUrl= \"https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epW…L8EyIzlX7EabaDWIWIBoJd939rwYich5lu3BrMNg5ztWw/132\"}",
+          "scene": null
+        },
+        {
+          "name": "blog",
+          "pathName": "pages/blog/blog",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "blog-comment",
+          "pathName": "pages/blog-comment/blog-comment",
+          "query": "blogId=0bcbdde05fc8b004009aaebe68739730",
+          "scene": null
+        },
+        {
+          "name": "playlist",
+          "pathName": "pages/playlist/playlist",
+          "query": "blogId=0bcbdde05fc8b004009aaebe68739730",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

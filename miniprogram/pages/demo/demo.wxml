@@ -1,0 +1,31 @@
+<block wx:for="{{arr}}" wx:key="*this" wx:for-item="data" wx:for-index="idx">
+  <view><checkbox></checkbox>{{data}}</view>
+</block>
+<button bind:tap="sort">随机排序</button>
+
+
+<block wx:for="{{arrObj}}" wx:key="id">
+  <view><checkbox></checkbox>{{item.name}}</view>
+</block>
+<button bind:tap="sortObj">随机排序</button>
+
+<button bind:tap="getMusicInfo">获取音乐信息</button>
+<button bind:tap="getMovieInfo">获取电影信息</button>
+
+<!-- <open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+<open-data type="userCity"></open-data>
+<open-data type="userCountry"></open-data> -->
+
+<button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">获取用户信息</button>
+
+<button bindtap="getOpenID">获取用户openid</button>
+
+<!-- <view>{{testObj.name}}</view>
+<view>{{testObj.age}}</view>
+<button bindtap="changeAge">changeAge</button>
+<button bindtap="insertData">插入数据</button>
+<button bindtap="getData">读取数据</button>
+<button bindtap="deleteData">删除数据</button>
+<button bindtap="readDate20">读取大于20的数据</button> -->
+<button bindtap="getRes">异步函数</button>

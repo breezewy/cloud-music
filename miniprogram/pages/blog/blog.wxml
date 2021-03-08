@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="container">
+    <!-- 头部 -->
+    <view class="header">
+      <view class="publish-container" bindtap="onPublish">
+        <i class="iconfont icon-fabu"></i>
+      </view>
+      <view class="search-container">
+        <cus-search iconfont="iconfont" icon-sousuo="icon-sousuo" bind:search="onSearch"></cus-search>
+      </view>
+    </view>
+
+    <!-- 博客卡片列表 -->
+    <view class="blog-list">
+      <block wx:for="{{blogList}}" wx:key="_id">
+        <view class="blog-panel">
+          <cus-blog-card blog="{{item}}" bindtap="goComment" data-blogId="{{item._id}}"/>
+          <cus-blog-ctrl 
+            blogId="{{item._id}}"
+            blog="{{item}}"
+            iconfont="iconfont"
+            icon-pinglun="icon-pinglun"
+            icon-fenxiang="icon-fenxiang"
+          />
+        </view>
+      </block>
+    </view>
+
+    <!-- 底部弹出层 -->
+    <cus-login 
+      modalShow="{{modalShow}}" 
+      bind:loginSuccess="onLoginSuccess" 
+      bind:loginFail="onLoginFail">
+    </cus-login>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cus-login":"/components/login/login",
+    "cus-bottom-modal":"/components/bottom-modal/bottom-modal"
+  }
+}

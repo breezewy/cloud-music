@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cus-playlist":"/components/playlist/playlist"
+  },
+  "enablePullDownRefresh": true
+}

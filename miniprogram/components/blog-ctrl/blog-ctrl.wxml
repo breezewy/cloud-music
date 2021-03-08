@@ -1,0 +1,46 @@
+<view class="ctrl">
+  <view class="ctrl-item" bindtap="subscribeMsg">
+    <i class="iconfont icon-pinglun icon"></i>
+    <text class="item">评论</text>
+  </view>
+  <view class="ctrl-item">
+    <button open-type="share" data-blog="{{blog}}" class="share-btn" hover-class="share-hover">
+      <i class="iconfont icon-fenxiang icon"></i>
+      <text class="item">分享</text>
+    </button>
+  </view>
+</view>
+
+<cus-login 
+  modalShow="{{loginShow}}"
+  bind:loginSuccess="onLoginSuccess"
+  bind:loginFail="onLoginFail"
+/>
+
+<cus-bottom-modal
+  modalShow="{{modalShow}}"
+>
+  <!-- <form slot="modal-content"  bindsubmit="onSend">
+    <textarea 
+        bindinput="onInput"
+        name="content" 
+        class="comment-content" 
+        placeholder="请输入评论内容..." 
+        value="{{content}}" 
+        fixed="true"
+        ></textarea>
+    <button class="send" form-type="submit">发送</button>
+  </form> -->
+
+  <view slot="modal-content">
+    <textarea 
+        bindinput="onInput"
+        name="content" 
+        class="comment-content" 
+        placeholder="请输入评论内容..." 
+        value="{{content}}" 
+        fixed="true">
+    </textarea>
+    <button class="send" form-type="submit" bindtap="onSend">发送</button>
+  </view>
+</cus-bottom-modal>
